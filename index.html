@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrBauto - Vânzări auto</title>
+    <style>
+        /* Stiluri CSS pentru pagină */
+        body {
+            background-image: url('https://catacars.ro/wp-content/uploads/2020/06/CataCARS_107-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* Stiluri CSS pentru titlu */
+        h1 {
+            font-size: 40px;
+            margin-bottom: 500px;
+            font-style: italic;
+            text-align: center;
+            color: #101010;
+            margin-top: opx;
+        }
+
+        /* Stiluri CSS pentru linie */
+        hr {
+            border: none;
+            background-color: #00008B;
+            height: 0px;
+            width: 100%;
+        }
+
+        /* Stiluri CSS pentru butonul de meniu */
+        .menu-button {
+            position: relative;
+            padding: 5px;
+            background-color: transparent;
+            color: #060606;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Stiluri CSS pentru liniile butonului de meniu */
+        .menu-line {
+            width: 30px;
+            height: 2px;
+            background-color: #010101;
+            margin: 5px;
+        }
+
+        /* Stiluri CSS pentru textul "Menu" */
+        .menu-text {
+            margin-left: 5px;
+        }
+
+        /* Stiluri CSS pentru meniul drop-down */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Stiluri CSS pentru elementele din meniul drop-down */
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Stiluri CSS pentru elementele din meniul drop-down la hover */
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Stiluri CSS pentru containerul meniului drop-down */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Afisează meniul drop-down atunci când butonul este apăsat */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Stiluri CSS pentru butonul de feedback */
+        .feedback-button {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Stiluri CSS pentru linkul de feedback */
+        .feedback-button a {
+            background-color: #00008B;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Stiluri CSS pentru linkul de feedback la hover */
+        .feedback-button a:hover {
+            background-color: #0000A0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-button dropdown">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <span class="menu-text">Menu</span>
+        <div class="dropdown-menu">
+            <a href="file:///C:/Users/Valentin/Desktop/R.I/tema%20%20ri/lista%20vanzari.html">Cumpără</a>
+            <a href="file:///C:/Users/Valentin/Desktop/R.I/tema%20%20ri/inregistrare_masina.html">Vinde</a>
+            <a href="file:///C:/Users/Valentin/Desktop/R.I/tema%20%20ri/despre%20noi.html">Despre noi</a>
+        </div>
+    </div>
+    <h1>AutoPlus</h1>
+    <hr>
+    <div class="feedback-button">
+        <a href="file:///C:/Users/Valentin/Desktop/R.I/tema%20%20ri/feedback.html">Feedback</a>
+    </div>
+</body>
+</html>

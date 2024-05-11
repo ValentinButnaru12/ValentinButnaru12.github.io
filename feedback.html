@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrBauto - Feedback</title>
+    <style>
+        /* Stiluri CSS pentru pagină */
+        body {
+            background-image: url('https://catacars.ro/wp-content/uploads/2020/06/CataCARS_107-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Stiluri CSS pentru container */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            text-align: center; /* Aliniere pe centru */
+        }
+
+        /* Stiluri CSS pentru titlu */
+        h1 {
+            font-size: 40px;
+            font-style: italic;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        /* Stiluri CSS pentru textul "Parerea ta conteaza" */
+        .feedback-text {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Stiluri CSS pentru textarea */
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            resize: none; /* Nu permite redimensionarea */
+        }
+
+        /* Stiluri CSS pentru butonul de trimitere */
+        input[type="submit"] {
+            background-color: #00008B;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Stiluri CSS pentru butonul de trimitere la hover */
+        input[type="submit"]:hover {
+            background-color: #0000A0;
+        }
+
+        /* Stiluri CSS pentru mesajul de mulțumire */
+        #thank-you-message {
+            display: none; /* Ascunde mesajul initial */
+            font-size: 24px;
+            color: #000000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback</h1>
+        <div class="feedback-text">Parerea ta conteaza pentru noi</div>
+        <form id="feedback-form" action="#" method="post">
+            <textarea name="feedback" id="feedback" placeholder="Scrieți aici feedback-ul dumneavoastră..." required></textarea>
+            <input type="submit" value="Trimite">
+        </form>
+        <div id="thank-you-message">Mulțumim pentru feedback!</div> <!-- Mesajul de mulțumire -->
+    </div>
+
+    <script>
+        // Funcția pentru afișarea mesajului de mulțumire
+        function showThankYouMessage() {
+            var thankYouMessage = document.getElementById("thank-you-message");
+            thankYouMessage.style.display = "block";
+        }
+
+        // Funcția care va fi apelată la trimiterea formularului
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Previne trimiterea formularului
+            showThankYouMessage(); // Afișează mesajul de mulțumire
+        });
+    </script>
+</body>
+</html>
